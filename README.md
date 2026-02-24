@@ -32,17 +32,17 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 📂 Project Structure
 
-
+```text
 portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
 └── assets/
-├── images/
-└── icons/
+    ├── images/
+    └── icons/
 
 
----
+```
 
 ## ⚡ How to Use
 
@@ -71,7 +71,7 @@ Feel free to reach out or follow my work:
 
 * **LinkedIn**: [linkedin.com/in/rewanshehab](https://www.linkedin.com/in/rewanshehab)
 * **GitHub**: [github.com/rewanshehab0120](https://github.com/rewanshehab0120)
-* **WhatsApp**: [Message me on WhatsApp](https://wa.me/your-number-here)
+* **WhatsApp**: [Message me on WhatsApp](https://wa.me/201554217321)
 
 ---
 
