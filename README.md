@@ -31,13 +31,15 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ---
 
 ## 📂 Project Structure
-/portfolio
-│-- index.html
-│-- style.css
-│-- script.js
-│-- assets/
-│ ├─ images/
-│ └─ icons/
+
+
+portfolio/
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+├── images/
+└── icons/
 
 
 ---
@@ -47,3 +49,24 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 1. Clone this repository:
 ```bash
 git clone https://github.com/rewanshehab0120/portfolio.git
+
+Open index.html in your browser.
+
+Explore sections: Hero, About Me, Projects, Skills, Contact.
+
+Toggle Dark/Light mode and interact with buttons and project cards.
+
+Or visit the live demo here: Live Portfolio
+👩‍💻 Author
+
+Rewan Shehab – Passionate about web development, UI/UX design, and building interactive projects.
+
+Connect with me on:
+
+LinkedIn
+
+GitHub
+
+⭐ Feedback
+
+If you like my portfolio, feel free to star ⭐ this repository and share your feedback!
