@@ -246,13 +246,41 @@ a.btn-primary:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+
+
 #skills .card img {
     width: 60px;
     height: 60px;
     object-fit: contain;
     margin-bottom: 15px;
 }
+/* LinkedIn Icon inside project card */
+.project-links a:not(.btn-primary):not(.btn-secondary) {
+    font-size: 20px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
 
+.project-links a:not(.btn-primary):not(.btn-secondary):hover {
+    transform: scale(1.2);
+    color: #000;
+}
+
+/* Dark mode */
+.dark .project-links a:not(.btn-primary):not(.btn-secondary) {
+    color: var(--primary);
+}
+
+.dark .project-links a:not(.btn-primary):not(.btn-secondary):hover {
+    color: #ffffff;
+}
+/* Remove underline from LinkedIn icon */
+.project-links a {
+    text-decoration: none;
+}
 /* Project Cards */
 .project-card {
     position: relative;
@@ -320,6 +348,40 @@ a.btn-primary:hover {
     justify-content: center;
     margin-top: 15px;
 }
+.section-title {
+    margin-bottom: 80px; /* زودي أو قللي الرقم حسب ما تحبي */
+}
+
+#portfolio .grid {
+    margin-top: 50px;  /* ده اللي هيعمل مسافة بين العنوان والكروت */
+}
+.more-projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.more-projects p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.more-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* حركة خفيفة احترافية */
+.more-links a {
+    transition: all 0.3s ease;
+}
+
+.more-links a:hover {
+    transform: translateY(-5px);
+}
 
 /* Contact Form */
 .contact-form {
@@ -354,6 +416,25 @@ body.dark .contact-form textarea {
 body.dark .contact-form button {
     background: var(--primary);
     color: #fff;
+}
+
+/* WhatsApp Button Style */
+.whatsapp-button {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.whatsapp-button a {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-button a:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* Footer */
