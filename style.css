@@ -145,13 +145,13 @@ body {
 
 /* Social Icons Dark Mode */
 .dark .hero-social a {
-    color: var(--primary); /* لون زرار About Me */
+    color: var(--primary);
     transition: transform 0.3s, color 0.3s;
 }
 
 .dark .hero-social a:hover {
-    color: #ffffff; /* أبيض عند Hover */
-    transform: scale(1.2); /* تكبير خفيف عند Hover */
+    color: #ffffff;
+    transform: scale(1.2);
 }
 
 /* About Me Button Hover Effect */
@@ -167,9 +167,9 @@ a.btn-primary {
 }
 
 a.btn-primary:hover {
-    transform: translateY(-5px) scale(1.05); /* رفع + تكبير */
+    transform: translateY(-5px) scale(1.05);
     opacity: 0.95;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* توهج خفيف */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero-img {
@@ -213,7 +213,7 @@ a.btn-primary:hover {
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .section-title i {
@@ -241,12 +241,27 @@ a.btn-primary:hover {
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+/* 1. Global Hover Transitions */
+.card, .project-card {
+    transition: all 0.3s ease-in-out;
 }
 
+/* 2. Light Mode Hover Effect */
+.card:hover, .project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border: 1px solid #269499;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 
+                0 0 15px rgba(38, 148, 153, 0.2);
+    cursor: pointer;
+}
 
+/* 3. Dark Mode Hover Effect */
+.dark .card:hover, .dark .project-card:hover {
+    background: #1e1e1e;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 20px rgba(28, 107, 122, 0.5); 
+    transform: translateY(-8px) scale(1.02);
+}
 
 #skills .card img {
     width: 60px;
@@ -254,6 +269,7 @@ a.btn-primary:hover {
     object-fit: contain;
     margin-bottom: 15px;
 }
+
 /* LinkedIn Icon inside project card */
 .project-links a:not(.btn-primary):not(.btn-secondary) {
     font-size: 20px;
@@ -277,10 +293,12 @@ a.btn-primary:hover {
 .dark .project-links a:not(.btn-primary):not(.btn-secondary):hover {
     color: #ffffff;
 }
-/* Remove underline from LinkedIn icon */
+
+
 .project-links a {
     text-decoration: none;
 }
+
 /* Project Cards */
 .project-card {
     position: relative;
@@ -292,13 +310,23 @@ a.btn-primary:hover {
     transition: 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* بيخلي الزراير دايماً تحت خالص */
-    height: 100%; /* بيوحد طول الكاردات */
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Dark Mode Project Card Active Effect */
+.dark .project-card:active {
+    border-color: var(--primary);
+    box-shadow: 0 12px 24px rgba(0, 212, 211, 0.4);
+    transform: translateY(-3px) scale(1.02);
+    transition: all 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    border-color: #269499;
+    box-shadow: 0 0 10px rgba(38, 148, 153, 0.3);
+    cursor: pointer;
 }
 
 .project-img {
@@ -318,10 +346,10 @@ a.btn-primary:hover {
 
 .project-tooltip {
     position: absolute;
-    top: 10px; /* فوق الصورة مباشرة */
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(28,107,122,0.9);
+    background: rgba(28, 107, 122, 0.9);
     color: #fff;
     padding: 10px;
     font-size: 14px;
@@ -329,13 +357,11 @@ a.btn-primary:hover {
     transition: 0.3s;
     border-radius: 8px;
     pointer-events: none;
-    width: 90%; /* تقريبا نفس حجم الصورة */
+    width: 90%;
     text-align: center;
     z-index: 2;
-}
-
-.project-card:hover .project-tooltip {
-    opacity: 1;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 .project-card:hover .project-tooltip {
@@ -348,13 +374,11 @@ a.btn-primary:hover {
     justify-content: center;
     margin-top: 15px;
 }
-.section-title {
-    margin-bottom: 80px; /* زودي أو قللي الرقم حسب ما تحبي */
-}
 
 #portfolio .grid {
-    margin-top: 50px;  /* ده اللي هيعمل مسافة بين العنوان والكروت */
+    margin-top: 50px;
 }
+
 .more-projects {
     text-align: center;
     margin-top: 50px;
@@ -374,7 +398,6 @@ a.btn-primary:hover {
     flex-wrap: wrap;
 }
 
-/* حركة خفيفة احترافية */
 .more-links a {
     transition: all 0.3s ease;
 }
@@ -413,9 +436,23 @@ body.dark .contact-form textarea {
     color: #f4f4f4;
     border: 1px solid #333;
 }
+
 body.dark .contact-form button {
     background: var(--primary);
     color: #fff;
+}
+
+/* Dark Mode Tooltip Enhancement */
+.dark .project-tooltip {
+    background: rgba(30, 41, 59, 0.95);
+    border: 1px solid var(--primary);
+    color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.dark .project-card {
+    border: 1px solid #222;
 }
 
 /* WhatsApp Button Style */
@@ -434,7 +471,7 @@ body.dark .contact-form button {
 
 .whatsapp-button a:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
