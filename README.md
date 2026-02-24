@@ -50,23 +50,31 @@ portfolio/
 ```bash
 git clone https://github.com/rewanshehab0120/portfolio.git
 
+
 Open index.html in your browser.
 
 Explore sections: Hero, About Me, Projects, Skills, Contact.
 
 Toggle Dark/Light mode and interact with buttons and project cards.
 
-Or visit the live demo here: Live Portfolio
-👩‍💻 Author
 
-Rewan Shehab – Passionate about web development, UI/UX design, and building interactive projects.
+```
+## 👩‍💻 Author
 
-Connect with me on:
+**Rewan Shehab** Passionate about web development, UI/UX design, and building interactive projects.
 
-LinkedIn
+---
 
-GitHub
+## 🌐 Connect with Me
 
-⭐ Feedback
+Feel free to reach out or follow my work:
+
+* **LinkedIn**: [linkedin.com/in/rewanshehab](https://www.linkedin.com/in/rewanshehab)
+* **GitHub**: [github.com/rewanshehab0120](https://github.com/rewanshehab0120)
+* **WhatsApp**: [Message me on WhatsApp](https://wa.me/your-number-here)
+
+---
+
+## ⭐ Feedback
 
 If you like my portfolio, feel free to star ⭐ this repository and share your feedback!
