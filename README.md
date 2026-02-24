@@ -69,7 +69,7 @@ Toggle Dark/Light mode and interact with buttons and project cards.
 
 Feel free to reach out or follow my work:
 
-* **LinkedIn**: [linkedin.com/in/rewanshehab](https://www.linkedin.com/in/rewanshehab)
+* **LinkedIn**: [linkedin.com/in/rewanshehab](https://www.linkedin.com/in/rwan-shehab/)
 * **GitHub**: [github.com/rewanshehab0120](https://github.com/rewanshehab0120)
 * **WhatsApp**: [Message me on WhatsApp](https://wa.me/201554217321)
 
