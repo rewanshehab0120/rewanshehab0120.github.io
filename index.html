@@ -4,351 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewan Shehab</title>
+    <title>Rewan Shehab | Data Analyst</title>
+    <meta name="description" content="Rewan Shehab - Data Analyst specialized in SQL, Python & BI.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="Style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-    .portfolio-card a, 
-    .portfolio-card a:visited {
-        color:  rgb(152, 152, 243) !important;
-        text-decoration: none !important;
-    }
-</style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="home">
-        <div class="navebar">
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-chart-simple"></i> Rewan Shehab
+            </a>
+
             <nav>
-                <a href="#home" id="namelogo">Rewan Shehab</a>
-                <ul>
-                    <li><a href="#home">Home</a></li>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="actions">
+                <a href="Rewan_CV.pdf" target="_blank" class="btn-primary">
+                    <i class="fa-solid fa-download"></i> CV
+                </a>
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-
-
-        <div class="h-content">
-            <div class="h-text">
-                <br><br>
-                <p><span style="color:rgb(28, 107, 122);font-size: large; font-weight: 700;">Hi There , I'm </span></p>
-                <h1 style="font-size: 30px; color:rgb(7, 33, 39) ;text-shadow: 1px 1px 5px ;">Rewan Shehab</h1>
-                <p class="para">Software Developer & Data Analyst</p>
-                <div id="Social">
-                    <a href="https://www.facebook.com/rwan.ali.224481/" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/rwan-shehab-790723240/" target="_blank" rel="noopener"> <i
-                            class="fa-brands fa-linkedin"></i> </a>
-                    <a href="https://github.com/rewanshehab0120" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/rony.17055/" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-instagram"></i></a>
-                </div>
-                <a href="#about" style="text-decoration: none;" class="meabuot">About me<i
-                        class="fa-solid fa-circle-arrow-down"></i></a>
-
-            </div>
-            <div class="h-img">
-                <img src="image/Picsart_24-07-28_05-03-07-877.jpg" alt="Rewan Shehab    ">
-            </div>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero reveal">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p><span>Hi There, I'm</span></p>
+                <h1>Rewan Shehab</h1>
+                <h3>Data Analyst & BI Specialist</h3>
+                <p>I don't just visualize data;<br>I decode it</p>
 
-
-    <main>
-        <section id="about">
-            <div class="about-container">
-                <h2>About Me</h2>
-                <hr
-                    style="width: 100px; height: 3px; background-color: rgb(28, 107, 122); border: none/*يزيل الحدود الافتراضية للخط الأفقي*/; margin-bottom: 20px;">
-                <table>
-
-                    <td style="font-weight: 100px; font-size: 15px; line-height: 20px;">
-                        <p style="font-weight:700;font-size: large; color:rgb(7, 33, 39) "><b>I'm <span
-                                    style="color: rgb(28, 107, 122); font-size: 25px; ">Rewan Shehab ,</span> a Software
-                                Developer & Data Analyst</b></p>
-                        <p>I am a coder with skills in C++, Python, and Object-Oriented Programming (OOP), honing my
-                            problem-solving abilities on LeetCode and Codeforces.</p>
-                        <p>I study graphic design using Canva and have started learning web development, completing the
-                            CS50 course.</p>
-                        <p>I am currently studying data analysis to derive valuable insights from data.</p>
-                        <p>I participate in volunteer work and student activities.</p>
-                    </td>
-
-                    <td style="line-height: 20px;">
-                        <p><span style="font-size: large; font-weight: 700;"><b>Age:</b></span>20</p>
-                        <hr>
-                        <p><span style="font-size: large; font-weight: 700;"><b>Email:</b></span></p>
-                        <p>rwanshehab15@gmail.com</p>
-                        <hr>
-                        <p><span style="font-size: large; font-weight: 700;"><b>Place:</b></span>PortSaid</p>
-                    </td>
-                </table>
-            </div>
-        </section>
-
-
-
-
-
-        <section id="skills">
-            <div class="skills-container">
-                <h2><i class="fa-solid fa-laptop-code"></i> Skills & Abilities</h2>
-                <hr
-                    style="width: 100px; height: 3px; background-color: rgb(28, 107, 122); border: none/*يزيل الحدود الافتراضية للخط الأفقي*/; margin-bottom: 20px;">
-                <div class="skills-content">
-                    <table id="t">
-                        <tr id="firstrow">
-                            <td>
-                                <section><img src="image/C++ (2).jpg" alt="c++ logo"><br>
-                                    <p>C++ Programming</p>
-                                </section>
-                            </td>
-                            <td>
-                                <section><img src="image/python logo (4).jpg" alt="python logo"><br>
-                                    <p>Python Programming</p>
-                                </section>
-                            </td>
-                            <td>
-                                <section><img src="image/Data analysis symbol icon.jpg" id="edit"
-                                        alt="Data analysis symbol icon"><br>
-                                    <p>Data Analyst</p>
-                                </section>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <section><img src="image/Baixar canva transparente ícone.jpg" id="edit"
-                                        alt="Canva Icone"><br>
-                                    <p>Canva Graphic Designer</p>
-                                </section>
-                            </td>
-                            <td>
-                                <section id="larger"><img src="image/Html free icons designed by Freepik.jpg"
-                                        alt="html logo"><br>
-                                    <p style="margin-top: 20px;">HTML</p>
-                                </section>
-                            </td>
-                            <td>
-                                <section><img src="image/CSS.jpg" alt="css logo" id="edit"><br>
-                                    <p>CSS</p>
-                                </section>
-                            </td>
-                        </tr>
-                    </table>
+                <!-- Social Links -->
+                <div class="hero-social">
+                    <a href="https://www.facebook.com/rwan.ali.224481/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/rwan-shehab-790723240/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rewanshehab0120" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/rony.17055/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
-        </section>
 
-
-
-
-        <section id="Services">
-            <div class="Services-contener">
-                <h2><i class="fa-solid fa-user-check"></i> My Services</h2>
-                <hr
-                    style="width: 100px; height: 3px; background-color: rgb(28, 107, 122); border: none/*يزيل الحدود الافتراضية للخط الأفقي*/; margin-bottom: 20px;">
-
-                <table id="s-table">
-                    <tr>
-                        <td id=1>
-                            <div class="service-card">
-                                <img src="image/Web Development Illustrations - Free Download in SVG, PNG.jpg"
-                                    alt="Software Developer">
-
-                                <br>
-                                <h3>Software Developer</h3>
-                                <br>
-                                <p>I can using c++ & python to build Software projects</p>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="service-card"><img src="image/f86dc2fc-10e8-44b6-b3b4-3d3350130810.jpg"
-                                    alt="Web Developer">
-
-                                <br>
-                                <h3>Web Developer</h3>
-                                <br>
-                                <p>By using HTML & CSS ,I can build your website</p>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <div class="service-card"><img
-                                    src="image/Como fazer uma INTRODUÇÃO de TCC vai que encantar a banca! - TCC Descomplicado.jpg"
-                                    alt="Data Analysis">
-
-                                <br>
-                                <h3>Data Analyst</h3>
-                                </h3>
-                                <br>
-                                <p>Professional data analysis for informed decision-making</p>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="service-card"><img
-                                    src="image/Création de logo de papeterie _ Vecteur Gratuite.jpg"
-                                    alt="Graphic Developer">
-                                <br>
-                                <h3>Graphic Designer</h3>
-                                <br>
-                                <p>Make alot of designes using Canva </p>
-                            </div>
-                        </td>
-                    </tr>
-
-                </table>
+                <a href="#about" class="btn-primary">About Me <i class="fa-solid fa-circle-arrow-down"></i></a>
             </div>
-        </section>
 
-
-<section id="portfolio">
-    <div class="p-conternar">
-        <h2><i class="fa-solid fa-code-branch"></i> My Portfolio</h2>
-        <hr style="width: 100px; height: 3px; background-color: rgb(28, 107, 122); border: none; margin-bottom: 20px;">
-        
-        <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-            <tr>
-              <td style="padding: 10px;">
-    <div class="portfolio-card">
-        <img src="image/Screenshot (2479).png" alt="Sales Analysis">
-        <h2>Sales Analysis & SQL Insights</h2>
-        <p style="color: #666; font-size: 0.9em;">SQL Server Performance Analysis</p>
-        <div style="display: flex; justify-content: space-around; padding: 10px 0;">
-            <a href="https://github.com/rewanshehab0120/Sales-Data-Analysis-SQL" target="_blank" style="text-decoration: none;">
-                <p style="color: #2c3e50; font-weight: bold; margin: 0;">SQL Queries</p>
-            </a>
-            <a href="https://techfolioo.com/project-preview?id=585" target="_blank" style="text-decoration: none;">
-                <p style="color: #2c3e50; font-weight: bold; margin: 0;">Case Study</p>
-            </a>
-        </div>
-    </div>
-</td>
-
-<td style="padding: 10px;">
-    <div class="portfolio-card">
-        <img src="image/fiD.png" alt="Chocolate Sales">
-        <h2>Chocolate Sales Intelligence</h2>
-        <p style="color: #666; font-size: 0.9em;">Excel & Power Query Dashboard</p>
-        <div style="display: flex; justify-content: space-around; padding: 10px 0;">
-            <a href="https://github.com/rewanshehab0120/Chocolate-Sales-Analysis-Dashboards" target="_blank" style="text-decoration: none;">
-                <p style="color: #2c3e50; font-weight: bold; margin: 0;">GitHub</p>
-            </a>
-            <a href="https://techfolioo.com/project-preview?id=597" target="_blank" style="text-decoration: none;">
-                <p style="color: #2c3e50; font-weight: bold; margin: 0;">Case Study</p>
-            </a>
-        </div>
-    </div>
-</td>
-
-<td style="padding: 10px;">
-    <div class="portfolio-card">
-        <img src="image/Screenshot (1710).png" alt="HTML Tutorial">
-        <h2>HTML Tutorial</h2>
-        <a href="#" target="_blank" style="text-decoration: none;">
-            <p style="color: #2c3e50; font-weight: bold; margin: 0;">Visit Website</p>
-        </a>
-    </div>
-</td>
-            </tr>
-
-            <tr>
-                        <td style="padding: 10px;">
-    <div class="portfolio-card">
-        <img src="image/Screenshot (1710).png" alt="HTML Tutorial">
-        <h2>HTML Tutorial</h2>
-        <a href="#" target="_blank" style="text-decoration: none;">
-            <p style="color: #2c3e50; font-weight: bold; margin: 0;">Visit Website</p>
-        </a>
-    </div>
-</td><td style="padding: 10px;">
-    <div class="portfolio-card">
-        <img src="image/Screenshot (1710).png" alt="HTML Tutorial">
-        <h2>HTML Tutorial</h2>
-        <a href="#" target="_blank" style="text-decoration: none;">
-            <p style="color: #2c3e50; font-weight: bold; margin: 0;">Visit Website</p>
-        </a>
-    </div>
-</td>
-                       <td style="padding: 10px;">
-    <div class="portfolio-card">
-        <img src="image/Screenshot (1710).png" alt="HTML Tutorial">
-        <h2>HTML Tutorial</h2>
-        <a href="#" target="_blank" style="text-decoration: none;">
-            <p style="color: #2c3e50; font-weight: bold; margin: 0;">Visit Website</p>
-        </a>
-    </div>
-</td>
-                    </tr>
-            
-            </table>
-    </div>
-</section>
-
-
-
-        <section id="Contact">
-            <div class="C-container">
-                <h2><i class="fa-solid fa-headset"></i> Get In <span style="color: rgb(7, 33, 39);"> Touch</span></h2>
-                <table>
-                    <tr>
-                        <td>
-                            <div class="row1">
-                                <img src="image/Call Center Operator Vectors, Photos and PSD files….jpg" alt="Get in Touch">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="row2">
-                                <form method="POST" action="https://formsubmit.co/rwanshehab15@gmail.com"
-                                    enctype="multipart/form-data">
-                                    <input type="text" name="name" id="name" placeholder="Name" required>
-
-                                    <input type="email" name="email" id="email" placeholder="Email" required>
-
-                                    <textarea name="massage" id="massage" cols="30" rows="10"
-                                        placeholder="Massage"></textarea>
-
-                                    <button type="submit" class="but">Submit</button>
-                                </form>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+            <div class="hero-img">
+                <img src="image/Picsart_24-07-28_05-03-07-877.jpg" alt="Rewan Shehab">
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <!-- About -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
+            <p class="about-text">
+                I'm Rewan Shehab, a Data Analyst graduate from NTI. I specialize in Python, Excel, SQL Server, Tableau,
+                and Power BI.
+                I expanded my analytical expertise through DataCamp and hands-on projects.<br><br>
+                With a strong programming foundation in Python and C++, I participated in ECPC, trained on Codeforces,
+                and studied OOP, Data Structures, Algorithms, Cybersecurity, Networking, and Data Encryption.<br><br>
+                Currently, I’m advancing into Machine Learning and building real-world ML projects.
+            </p>
+        </div>
+    </section>
 
-    <footer id="footer">
-        <p>&copy;2025 | All right reserved</p>
-    </footer>
+    <!-- Skills -->
+    <section id="skills" class="section bg-light reveal">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-gears"></i> Technical Skills</h2>
+            <div class="grid">
+                <div class="card"><img src="image/python logo (4).jpg" alt="Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="card"><img src="image/C++ (2).jpg" alt="C++">
+                    <h3>C++</h3>
+                </div>
+                <div class="card"><img src="image/Data analysis symbol icon.jpg" alt="Power BI">
+                    <h3>Power BI</h3>
+                </div>
+                <div class="card"><img src="image/Html free icons designed by Freepik.jpg" alt="Excel">
+                    <h3>Excel</h3>
+                </div>
+                <div class="card"><img src="image/CSS.jpg" alt="SQL Server">
+                    <h3>SQL Server</h3>
+                </div>
+                <div class="card"><img src="image/Baixar canva transparente ícone.jpg" alt="Tableau">
+                    <h3>Tableau</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section reveal">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Featured Projects</h2>
+            <div class="grid">
+
+                <!-- Project 1 -->
+                <div class="card project-card">
+                    <div class="project-img"><img src="image/Screenshot (2479).png" alt="Sales Dashboard"></div>
+                    <h3>Sales Analysis Dashboard</h3>
+                    <div class="project-tooltip">Analyzes sales trends, top products, and revenue growth over the past
+                        year.</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="btn-secondary"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card">
+                    <div class="project-img"><img src="image/fiD.png" alt="Chocolate Dashboard"></div>
+                    <h3>Chocolate Sales Dashboard</h3>
+                    <div class="project-tooltip">Tracks chocolate sales by region, identifies best-selling flavors, and
+                        predicts demand.</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="btn-secondary"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card">
+                    <div class="project-img"><img src="image/Screenshot (1710).png" alt="Marketing Analysis"></div>
+                    <h3>Marketing Analysis</h3>
+                    <div class="project-tooltip">Visualizes marketing campaign performance, engagement metrics, and ROI
+                        insights.</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="btn-secondary"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-light reveal">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+            <form class="contact-form" method="POST" action="https://formsubmit.co/rwanshehab15@gmail.com"
+                enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>© 2026 Rewan Shehab</footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 
-
-
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
