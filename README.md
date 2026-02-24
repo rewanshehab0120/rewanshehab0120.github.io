@@ -32,17 +32,11 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 📂 Project Structure
 /portfolio
-
 │-- index.html
-
 │-- style.css
-
 │-- script.js
-
 │-- assets/
-
 │ ├─ images/
-
 │ └─ icons/
 
 
