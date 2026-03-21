@@ -143,6 +143,28 @@ body {
     margin: 20px 0;
 }
 
+.hero-social a .material-symbols-outlined {
+    font-size: 32px; 
+    color: var(--primary); 
+    transition: 0.3s; 
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+.hero-social a:hover .material-symbols-outlined {
+    transform: scale(1.2);
+    color: #000; 
+}
+
+.dark .hero-social a:hover .material-symbols-outlined {
+    color: #ffffff; 
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+}
 /* Social Icons Dark Mode */
 .dark .hero-social a {
     color: var(--primary);
