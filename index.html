@@ -4,19 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewan Shehab | Data Analyst</title>
-    <meta name="description" content="Rewan Shehab - Data Analyst specialized in SQL, Python & BI.">
+
+    <title>Rewan Shehab | Data Analyst & BI Specialist</title>
+
+    <meta name="description"
+        content="Rewan Shehab - Data Analyst & BI Specialist specialized in Data Analytics, Business Intelligence, SQL, Python, Power BI and Machine Learning.">
+
+    <meta name="keywords"
+        content="Rewan Shehab, Data Analyst, BI Specialist, Power BI, SQL, Python, Excel, Tableau, Machine Learning">
+
+    <meta name="author" content="Rewan Shehab">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -24,218 +34,1788 @@
 
 <body>
 
-    <!-- Loader -->
+    <!-- ==================== LOADER ==================== -->
+
     <div id="loader">
         <div class="spinner"></div>
     </div>
 
-    <!-- Navbar -->
-    <header class="navbar">
+
+    <!-- ==================== NAVBAR ==================== -->
+
+    <header class="navbar" id="navbar">
+
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-chart-simple"></i> Rewan Shehab
+
+            <a href="#hero" class="logo">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Rewan Shehab</span>
             </a>
 
-            <nav>
+            <!-- Mobile Menu Button -->
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation -->
+            <nav id="main-nav">
                 <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+
+                    <li>
+                        <a href="#hero" class="nav-link active">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#what-i-can-do" class="nav-link">What I Can Do</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <!-- Dropdown 1: Projects -->
+                    <li class="nav-dropdown">
+                        <a href="#portfolio" class="nav-link dropdown-toggle">
+                            Projects <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#portfolio">Featured Projects</a></li>
+                            <li><a href="#all-projects">All Projects</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown 2: Experience & Credentials -->
+                    <li class="nav-dropdown">
+                        <a href="#experience" class="nav-link dropdown-toggle">
+                            Experience <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#how-i-work">How I Work</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#certifications">Certifications</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
                 </ul>
             </nav>
 
+            <!-- Navbar Actions -->
             <div class="actions">
-                <a href="Rewan_Shehab_Data_Analyst_CV.pdf" target="_blank" class="btn-primary">
-                    <i class="fa-solid fa-download"></i> CV
+                <a href="Rewan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary nav-cv">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    CV
                 </a>
-                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
             </div>
 
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
+
     </header>
 
-    <!-- Hero Section -->
+
+    <!-- ==================== HERO ==================== -->
+
     <section id="hero" class="hero reveal">
+
         <div class="container hero-container">
+
             <div class="hero-text">
-                <p><span>Hi There, I'm</span></p>
-                <h1>Rewan Shehab</h1>
-                <h3>Data Analyst & BI Specialist</h3>
-                <p>I don't just visualize data;<br>I decode it</p>
+
+                <span class="hero-greeting">
+                    Hi, I'm
+                </span>
+
+                <h1>
+                    Rewan Shehab
+                </h1>
+
+                <h2>
+                    Data Analyst & BI Specialist
+                </h2>
+
+                <p class="hero-tagline">
+                    I don't just visualize data;
+                    <strong>I decode it.</strong>
+                </p>
+
+                <p class="hero-description">
+
+                    I turn raw and complex data into meaningful insights,
+                    interactive dashboards, and clear business stories using
+                    Python, SQL, Excel, Power BI, and Tableau.
+
+                    Currently expanding my expertise into
+                    Machine Learning and real-world predictive solutions.
+
+                </p>
+
 
                 <!-- Social Links -->
+
                 <div class="hero-social">
-                    <a href="https://www.upwork.com/freelancers/~01dd192401f9589a62" target="_blank"><i
-                            class="fa-brands fa-square-upwork"></i></a>
-                    <a href="https://www.linkedin.com/in/rwan-shehab-790723240/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/rewanshehab0120" target="_blank"><i 
-                        class="fa-brands fa-github"></i></a>
-                    <a href="https://khamsat.com/user/rwan0120" target="_blank">
-                        <span class="material-symbols-outlined">looks_5</span></a>
-                    <a href="https://linktr.ee/rewanshehab" target="_blank"><i 
-                        class="fa-solid fa-link"></i></i></a>
+
+                    <a href="https://www.upwork.com/freelancers/~01dd192401f9589a62" target="_blank"
+                        rel="noopener noreferrer" aria-label="Upwork">
+
+                        <i class="fa-brands fa-upwork"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/rwan-shehab-790723240/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+
+                    <a href="https://github.com/rewanshehab0120" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                    <a href="https://khamsat.com/user/rwan0120" target="_blank" rel="noopener noreferrer"
+                        aria-label="Khamsat">
+
+                        <span class="material-symbols-outlined">
+                            looks_5
+                        </span>
+
+                    </a>
+
+
+                    <a href="https://linktr.ee/rewanshehab" target="_blank" rel="noopener noreferrer"
+                        aria-label="Linktree">
+
+                        <i class="fa-solid fa-link"></i>
+
+                    </a>
+
                 </div>
 
-                <a href="#about" class="btn-primary">About Me <i class="fa-solid fa-circle-arrow-down"></i></a>
+
+                <!-- Hero Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a href="#portfolio" class="btn-primary">
+                        View My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn-secondary">
+                        Let's Talk
+                    </a>
+
+                </div>
+
             </div>
+
+
+            <!-- Hero Image -->
 
             <div class="hero-img">
-                <img src="image/Untitled_design(3).png" alt="Rewan Shehab">
+
+                <div class="hero-img-frame">
+
+                    <img src="image/Untitled design.png" alt="Rewan Shehab">
+
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- About -->
+
+
+    <!-- ==================== ABOUT ==================== -->
+
     <section id="about" class="section reveal">
+
         <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
-            <p class="about-text">
-                I'm Rewan Shehab, a Data Analyst graduate from NTI. I specialize in Python, Excel, SQL Server, Tableau,
-                and Power BI.
-                I expanded my analytical expertise through DataCamp and hands-on projects.<br><br>
-                With a strong programming foundation in Python and C++, I participated in ECPC, trained on Codeforces,
-                and studied OOP, Data Structures, Algorithms, Cybersecurity, Networking, and Data Encryption.<br><br>
-                Currently, I’m advancing into Machine Learning and building real-world ML projects.
-            </p>
-        </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section bg-light reveal">
-        <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-gears"></i> Technical Skills</h2>
-            <div class="grid">
-                <div class="card"><img src="image/python.png" alt="Python">
-                    <h3>Python</h3>
-                </div>
-                <div class="card"><img src="image/c-.png" alt="C++">
-                    <h3>C++</h3>
-                </div>
-                <div class="card"><img src="image/bar-graph.png" alt="Power BI">
-                    <h3>Power BI</h3>
-                </div>
-                <div class="card"><img src="image/logo.png" alt="Excel">
-                    <h3>Excel</h3>
-                </div>
-                <div class="card"><img src="image/database (1).png" alt="SQL Server">
-                    <h3>SQL Server</h3>
-                </div>
-                <div class="card"><img src="image/dashboard (1).png" alt="Tableau">
-                    <h3>Tableau</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="section-heading">
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="section reveal">
-        <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Featured Projects</h2>
-            <div class="grid">
+                <span class="section-label">
+                    About Me
+                </span>
 
-                <!-- Project 1 -->
-                <div class="card project-card">
-                    <div class="project-img"><img src="image/Presentation1.png" alt="Sales Dashboard"></div>
-                    <h3>High-Volume Sales Analytics: Processing 8.5M Records</h3>
-                    <div class="project-tooltip">Scalable Sales Dashboard built to handle 8.5M rows. Focused on Big Data
-                        optimization, advanced data modeling, and actionable business intelligence using Excel.</div>
-                    <div class="project-links">
-                        <a href="https://github.com/rewanshehab0120/-Excel-Big-Data-Dashboard" target="_blank"
-                            class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://1drv.ms/x/c/60846860529561d6/IQDmeclMFhC2Q6IjA-Kvrlv1AdMljnfy6FpdQVkGRigdN3s?e=RHH8nO" target="_blank" class="btn-secondary"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                        <a href="https://www.linkedin.com/posts/rwan-shehab_datavisualization-datastorytelling-cleandesign-activity-7430231089593352192-PJX9?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="card project-card">
-                    <div class="project-img"><img src="image/Screenshot 2026-02-24 124710.png"
-                            alt="Telco Customer Churn"></div>
-                    <h3>Telco Customer Churn & Retention Analysis</h3>
-                    <div class="project-tooltip">
-                        Strategic analysis of customer retention for a Telco provider. Visualizing churn drivers and
-                        behavioral patterns to provide data-driven recommendations for reducing customer loss and
-                        improving loyalty.</div>
-                    <div class="project-links">
-                        <a href="https://github.com/rewanshehab0120/Telco-Customer-Data-Analysis" target="_blank"
-                            class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://app.powerbi.com/groups/me/reports/f7829a0d-d00d-4693-b904-cd7fba5eaaf0/17eff8309d60a7c2008b?experience=power-bi" target="_blank" class="btn-secondary"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                        <a href="https://www.linkedin.com/posts/rwan-shehab_presentation-activity-7441408395754037248-PIvp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="card project-card">
-                    <div class="project-img"><img src="image/Screenshot(798).png" alt="Marketing Analysis">
-                    </div>
-                    <h3>Educational Management & SQL Analytics</h3>
-                    <div class="project-tooltip">A robust SQL Server solution for academic tracking. Featuring a fully normalized relational database, it transforms raw training data into actionable insights—from tracking trainee attendance to optimizing classroom capacity and curriculum distribution.</div>
-                    <div class="project-links">
-                        <a href="https://github.com/rewanshehab0120/Educational-Management-System-Database-SQL-Analytics-" target="_blank"
-                            class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://www.linkedin.com/posts/rwan-shehab_sql-databaseabrdesign-nti-activity-7445462771883884545-lO4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE"><i
-                                class="fa-brands fa-linkedin"></i></a>
-
-                    </div>
-                </div>
+                <h2 class="section-title">
+                    Turning Data Into Meaning
+                </h2>
 
             </div>
-        </div>
-        <!-- More Projects Button -->
-         
-<div class="more-projects">
-    <p>Interested in seeing more of my work?</p>
-    <div class="more-links">
-        <a href="https://techfolioo.com/profile" target="_blank" class="btn-primary">
-            <i class="fa-solid fa-globe"></i> View My Techfolio
-        </a>
 
-        <a href="https://app.powerbi.com/groups/me/list?experience=power-bi" target="_blank" class="btn-secondary">
-            <i class="fa-solid fa-chart-line"></i> Power BI Service
-        </a>
-    </div>
-</div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+
+                        I'm Rewan Shehab, a Data Analyst and BI-focused
+                        undergraduate with a strong foundation in
+                        Python, Excel, SQL Server, Power BI, and Tableau.
+
+                    </p>
+
+
+                    <p>
+
+                        My analytical journey includes practical projects,
+                        professional training, and hands-on work with
+                        data cleaning, exploratory analysis,
+                        visualization, and business intelligence.
+
+                    </p>
+
+
+                    <p>
+
+                        I also have a programming foundation in
+                        Python and C++, with experience in
+                        OOP, Data Structures, Algorithms,
+                        Cybersecurity, Networking, and Data Encryption.
+
+                    </p>
+
+
+                    <p>
+
+                        Currently, I'm expanding my skills into
+                        Machine Learning and building practical
+                        data-driven solutions.
+
+                    </p>
+
+                </div>
+
+
+                <div class="about-highlight">
+
+                    <div class="highlight-item">
+
+                        <strong>Volunteer</strong>
+
+                        <span>
+                            Community & Social Work
+                        </span>
+
+                    </div>
+
+                    <div class="highlight-item">
+
+                        <strong>ITM Student</strong>
+
+                        <span>
+                            Information Technology Management
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="highlight-item">
+
+                        <strong>Data → BI → ML</strong>
+
+                        <span>
+                            Career Direction
+                        </span>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section bg-light reveal">
+
+
+    <!-- ==================== WHAT I CAN DO ==================== -->
+
+    <section id="what-i-can-do" class="section bg-light reveal">
+
         <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    What I Can Do
+                </span>
+
+                <h2 class="section-title">
+                    From Raw Data to Clear Insights
+                </h2>
+
+                <p class="section-description">
+                    Practical data solutions focused on clarity,
+                    accuracy, and business value.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- Service 1 -->
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-broom"></i>
+                    </div>
+
+                    <h3>
+                        Data Cleaning
+                    </h3>
+
+                    <p>
+                        Transform messy datasets into
+                        analysis-ready data.
+                    </p>
+
+                </article>
+
+
+                <!-- Service 2 -->
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+
+                    <h3>
+                        Dashboard Development
+                    </h3>
+
+                    <p>
+                        Build interactive Power BI dashboards.
+                    </p>
+
+                </article>
+
+
+                <!-- Service 3 -->
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3>
+                        SQL Analysis
+                    </h3>
+
+                    <p>
+                        Extract insights from relational databases.
+                    </p>
+
+                </article>
+
+
+                <!-- Service 4 -->
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+
+                    <h3>
+                        Exploratory Data Analysis
+                    </h3>
+
+                    <p>
+                        Find patterns, trends and anomalies.
+                    </p>
+
+                </article>
+
+
+                <!-- Service 5 -->
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <h3>
+                        Business Reporting
+                    </h3>
+
+                    <p>
+                        Turn analysis into understandable reports.
+                    </p>
+
+                </article>
+
+
+                <!-- Service 6 -->
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <h3>
+                        Data Modeling
+                    </h3>
+
+                    <p>
+                        Build structured data models for better analysis and reporting.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== SKILLS ==================== -->
+
+    <section id="skills" class="section reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Technical Skills
+                </span>
+
+                <h2 class="section-title">
+                    Tools I Work With
+                </h2>
+
+            </div>
+
+
+            <div class="skills-groups">
+
+
+                <!-- Analytics -->
+
+                <div class="skill-group">
+
+                    <div class="skill-group-title">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        <h3>
+                            Analytics
+                        </h3>
+
+                    </div>
+
+                    <div class="skill-tags">
+
+                        <span>Python</span>
+                        <span>SQL Server</span>
+                        <span>Excel</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Business Intelligence -->
+
+                <div class="skill-group">
+
+                    <div class="skill-group-title">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <h3>
+                            Business Intelligence
+                        </h3>
+
+                    </div>
+
+                    <div class="skill-tags">
+
+                        <span>Power BI</span>
+                        <span>Tableau</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Programming -->
+
+                <div class="skill-group">
+
+                    <div class="skill-group-title">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <h3>
+                            Programming
+                        </h3>
+
+                    </div>
+
+                    <div class="skill-tags">
+
+                        <span>Python</span>
+                        <span>C++</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Data Skills -->
+
+                <div class="skill-group">
+
+                    <div class="skill-group-title">
+
+                        <i class="fa-solid fa-gears"></i>
+
+                        <h3>
+                            Data Skills
+                        </h3>
+
+                    </div>
+
+                    <div class="skill-tags">
+
+                        <span>Data Cleaning</span>
+                        <span>EDA</span>
+                        <span>Data Modeling</span>
+                        <span>DAX</span>
+                        <span>Power Query</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== FEATURED CLIENT PROJECTS ==================== -->
+
+    <section id="portfolio" class="section bg-light reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Featured Projects
+                </span>
+
+                <h2 class="section-title">
+                    Real Work. Real Data. Real Results.
+                </h2>
+
+                <p class="section-description">
+                    Selected projects developed for real-world business and client needs.
+                </p>
+
+            </div>
+
+
+            <div class="featured-projects-grid">
+
+
+                <!-- CLIENT PROJECT 01 -->
+
+                <article class="featured-project-card">
+
+                    <div class="project-gallery">
+
+                        <img src="image/Screenshot 2026-04-22 022851.png" alt="Client project preview" class="project-slide active">
+                        <img src="image/Screenshot 2026-04-22 023309.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-04-22 024507.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-04-22 024748.png" alt="Client project preview" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>
+                                GlowSpace
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-project-content">
+
+                        <span class="project-category">
+                            GlowSpace
+                        </span>
+
+                        <h3>
+                            GlowSpace – Personalized Beauty Marketing.
+                        </h3>
+
+                        <p>
+                            A comprehensive analytical study aimed at evaluating business performance and tracking
+                            revenue drivers. The project analyzes marketing channel efficiency, identifies key revenue streams, and
+                            uncovers customer behavioral patterns to balance acquisition with long-term retention and support strategic
+                            growth.
+                        </p>
+
+                        <div class="project-actions">
+                            <a href="reports/GlowSpace DarkMode.pdf" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Show The Report
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://lnkd.in/p/eAP3Tv-c" target="_blank" rel="noopener noreferrer" class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CLIENT PROJECT 02 -->
+
+                <article class="featured-project-card">
+
+                    <div class="project-gallery">
+
+                        <img src="image/Screenshot 2026-04-19 025534.png" alt="Client project preview" class="project-slide active">
+                        <img src="image/Screenshot 2026-04-19 030248.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-04-19 031718.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-04-19 032249.png" alt="Client project preview" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>
+                                HandyHome Services
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-project-content">
+
+                        <span class="project-category">
+                            Client Work
+                        </span>
+
+                        <h3>
+                            HandyHome Services
+                        </h3>
+
+                        <p>
+                            A multi-dimensional analytical study evaluating business operations, customer dynamics, and marketing
+                            performance. The project tracks service execution efficiency, analyzes peak booking times, and measures
+                            channel profitability to balance new customer acquisition with long-term retention and streamline daily workflows.
+                        </p>
+
+                        <div class="project-actions">
+                            <a href="reports/HandyHome Services - blue.pdf" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Show The Report
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://lnkd.in/p/e5qMMg3v" target="_blank" rel="noopener noreferrer" class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CLIENT PROJECT 03 -->
+
+                <article class="featured-project-card">
+
+                    <div class="project-gallery">
+
+                        <img src="image/Screenshot 2026-09-10 002229.png" alt="Client project preview" class="project-slide active">
+                        <img src="image/Screenshot 2026-09-10 002301.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-09-10 002322.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-09-10 002333.png" alt="Client project preview" class="project-slide">
+                        <img src="image/Screenshot 2026-09-10 002341.png" alt="Client project preview" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>
+                                Panifica Românească
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-project-content">
+
+                        <span class="project-category">
+                            Panifica Românească
+                        </span>
+
+                        <h3>
+                            Panifica Românească
+                        </h3>
+
+                        <p>
+                            A comprehensive analytical study focused on evaluating marketing effectiveness, customer acquisition patterns, and workforce
+                            performance. The project analyzes return on ad spend (ROAS) across multiple channels, monitors booking conversion rates, and
+                            evaluates employee service efficiency to optimize operations, minimize cancellations, and drive sustainable growth.
+                        </p>
+
+                        <div class="project-actions">
+                            <a href="reports/Panifica Românească DarkMode.pdf" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Show The Report
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://lnkd.in/p/e5qMMg3v" target="_blank" rel="noopener noreferrer" class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==================== ALL PROJECTS ==================== -->
+
+    <section id="all-projects" class="section reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Portfolio
+                </span>
+
+                <h2 class="section-title">
+                    Explore My Projects
+                </h2>
+
+                <p class="section-description">
+                    Explore selected work across Data Analysis,
+                    Business Intelligence, and Machine Learning.
+                </p>
+
+            </div>
+
+
+            <!-- Project Filters -->
+
+            <div class="project-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="data-analysis">
+                    Data Analysis
+                </button>
+
+                <button class="filter-btn" data-filter="machine-learning">
+                    Machine Learning
+                </button>
+
+            </div>
+
+
+
+            <!-- Project Grid -->
+
+            <div class="project-grid">
+
+
+                <!-- DATA ANALYSIS PROJECT 1 -->
+
+                <article class="project-card" data-category="data-analysis">
+
+                    <div class="project-img">
+                        <img src="image/Presentation1.png" alt="High Volume Sales Analytics">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Data Analysis
+                        </span>
+
+                        <h3>
+                            High-Volume Sales Analytics
+                        </h3>
+
+                        <p>
+                            Processing and analyzing
+                            8.5M+ sales records using Excel,
+                            Power Query and Data Model.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/rewanshehab0120/-Excel-Big-Data-Dashboard" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary">
+                                GitHub
+                            </a>
+
+                            <a href="https://1drv.ms/x/c/60846860529561d6/IQDmeclMFhC2Q6IjA-Kvrlv1AdMljnfy6FpdQVkGRigdN3s?e=RHH8nO"
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                Live Demo
+                            </a>
+
+                            <a href="https://www.linkedin.com/posts/rwan-shehab_datavisualization-datastorytelling-cleandesign-activity-7430231089593352192-PJX9?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE"
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary btn-linkedin-icon" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DATA ANALYSIS PROJECT 2 -->
+
+                <article class="project-card" data-category="data-analysis">
+
+                    <div class="project-img">
+                        <img src="image/Screenshot 2026-02-24 124710.png" alt="Telco Customer Churn Analysis">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Data Analysis
+                        </span>
+
+                        <h3>
+                            Telco Customer Churn & Retention
+                        </h3>
+
+                        <p>
+                            Customer churn analysis using
+                            Python, SQL, Power BI and Tableau.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/rewanshehab0120/Telco-Customer-Data-Analysis" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary">
+                                GitHub
+                            </a>
+
+                            <a href="https://app.powerbi.com/groups/me/reports/f7829a0d-d00d-4693-b904-cd7fba5eaaf0/17eff8309d60a7c2008b?experience=power-bi"
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                Live Demo
+                            </a>
+
+                            <a href="https://www.linkedin.com/posts/rwan-shehab_presentation-activity-7441408395754037248-PIvp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE"
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary btn-linkedin-icon" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DATA ANALYSIS PROJECT 3 -->
+
+                <article class="project-card" data-category="data-analysis">
+
+                    <div class="project-img">
+                        <img src="image/Screenshot 2026-02-20 082349.png" alt="Fitbit User Behavior Analysis">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Data Analysis
+                        </span>
+
+                        <h3>
+                            Fitbit User Behavior & Marketing Insights
+                        </h3>
+
+                        <p>
+                            Behavioral analysis dashboard using
+                            data transformation and DAX-driven metrics.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/rewanshehab0120/FitBit-Data-Insights-Dashboard" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary">
+                                GitHub
+                            </a>
+
+                            <a href="https://app.powerbi.com/groups/me/reports/3bfacd5b-0ba4-4bf1-b774-99fb41fd618e/dc4b7742841009d992c4?experience=power-bi"
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                Live Demo
+                            </a>
+
+                            <a href="https://www.linkedin.com/posts/rwan-shehab_sql-databaseabrdesign-nti-activity-7445462771883884545-lO4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE"
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary btn-linkedin-icon" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ML PROJECT PLACEHOLDER 1 -->
+
+                <article class="project-card" data-category="machine-learning">
+
+                    <div class="project-img">
+                        <img src="image/ml-project-1.png" alt="Machine Learning Project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Machine Learning
+                        </span>
+
+                        <h3>
+                            Machine Learning Project 01
+                        </h3>
+
+                        <p>
+                            Project details will be added
+                            from the project data.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ML PROJECT PLACEHOLDER 2 -->
+
+                <article class="project-card" data-category="machine-learning">
+
+                    <div class="project-img">
+                        <img src="image/ml-project-2.png" alt="Machine Learning Project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Machine Learning
+                        </span>
+
+                        <h3>
+                            Machine Learning Project 02
+                        </h3>
+
+                        <p>
+                            Project details will be added
+                            from the project data.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ML PROJECT PLACEHOLDER 3 -->
+
+                <article class="project-card" data-category="machine-learning">
+
+                    <div class="project-img">
+                        <img src="image/ml-project-3.png" alt="Machine Learning Project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Machine Learning
+                        </span>
+
+                        <h3>
+                            Machine Learning Project 03
+                        </h3>
+
+                        <p>
+                            Project details will be added
+                            from the project data.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- More Projects -->
+
+            <div class="more-projects">
+
+                <p>
+                    Want to explore the complete portfolio?
+                </p>
+
+                <a href="projects.html" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    View More Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==================== HOW I WORK ==================== -->
+
+    <section id="how-i-work" class="section bg-light reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    How I Work
+                </span>
+
+                <h2 class="section-title">
+                    From Question to Insight
+                </h2>
+
+            </div>
+
+
+            <div class="workflow">
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        01
+                    </span>
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        Define the business question
+                        and understand the data context.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        02
+                    </span>
+
+                    <i class="fa-solid fa-broom"></i>
+
+                    <h3>
+                        Clean
+                    </h3>
+
+                    <p>
+                        Prepare, clean and validate
+                        the data before analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        03
+                    </span>
+
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                    <h3>
+                        Analyze
+                    </h3>
+
+                    <p>
+                        Explore patterns, trends,
+                        relationships and anomalies.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        04
+                    </span>
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>
+                        Visualize
+                    </h3>
+
+                    <p>
+                        Build clear dashboards and
+                        meaningful visualizations.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        05
+                    </span>
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <h3>
+                        Communicate
+                    </h3>
+
+                    <p>
+                        Turn findings into a clear
+                        and understandable story.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        06
+                    </span>
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <h3>
+                        Support Decisions
+                    </h3>
+
+                    <p>
+                        Deliver insights that can
+                        support better decisions.
+                    </p>
+
+                </div>
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        07
+                    </span>
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <h3>
+                        Predictive Modeling
+                    </h3>
+
+                    <p>
+                        Deploy machine learning models to generate accurate data predictions.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================== EXPERIENCE & TRAINING ==================== -->
+
+    <section id="experience" class="section reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Experience & Training
+                </span>
+
+                <h2 class="section-title">
+                    Learning Through Practice
+                </h2>
+
+            </div>
+
+
+            <div class="experience-list">
+
+                <!-- Faculty / University -->
+
+                <article class="experience-item">
+
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="experience-content">
+
+                        <span class="experience-date">
+                            2023 – 2027
+                        </span>
+
+                        <h3>
+                            Management Technology & Information Systems
+                        </h3>
+
+                        <p>
+                            Bachelor's Degree — Information Technology Management (ITM).
+                        </p>
+
+                        <strong>
+                            Port Said University
+                        </strong>
+
+                    </div>
+
+                </article>
+
+                <!-- NTI -->
+
+                <article class="experience-item">
+
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <div class="experience-content">
+
+                        <span class="experience-date">
+                            Nov 2025 – Dec 2025
+                        </span>
+
+                        <h3>
+                            NTI — Data Analysis
+                        </h3>
+
+                        <p>
+                            Data Analysis: Skills for the
+                            Freelance Professional.
+                        </p>
+
+                        <strong>
+                            94% Final Score
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEPI -->
+
+                <article class="experience-item">
+
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <div class="experience-content">
+
+                        <span class="experience-date">
+                            2026
+                        </span>
+
+                        <h3>
+                            DEPI — Machine Learning
+                        </h3>
+
+                        <p>
+                            Machine Learning training focused
+                            on developing practical ML skills
+                            and real-world projects.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DataCamp -->
+
+                <article class="experience-item">
+
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="experience-content">
+
+                        <span class="experience-date">
+                            Professional Training
+                        </span>
+
+                        <h3>
+                            DataCamp
+                        </h3>
+
+                        <p>
+                            Power BI / Data Analysis training
+                            through practical, skill-focused learning.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CERTIFICATIONS ==================== -->
+
+    <section id="certifications" class="section bg-light reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Certifications
+                </span>
+
+                <h2 class="section-title">
+                    Certifications & Professional Learning
+                </h2>
+
+                <p class="section-description">
+                    Selected certifications that reflect my
+                    continuous development in Data Analytics
+                    and Business Intelligence.
+                </p>
+
+            </div>
+
+
+            <div class="certifications-grid">
+
+
+                <!-- NTI CERTIFICATE -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+
+                    <div class="certificate-content">
+
+                        <span class="certificate-provider">
+                            NTI · Ministry of Communications
+                        </span>
+
+                        <h3>
+                            Data Analysis
+                        </h3>
+
+                        <p>
+                            Professional Data Analysis training
+                            covering practical analytical and
+                            freelancing skills.
+
+                            <strong>
+                                Final Score: 94%
+                            </strong>
+
+                            The program is part of NTI's
+                            professional training initiatives
+                            under Egypt's Ministry of Communications
+                            and Information Technology.
+                        </p>
+
+                    </div>
+
+
+                    <a href="https://drive.google.com/file/d/1YXgYFdVWRQxZdOlKDgs3oyIzyaI_8UqI/view?usp=sharing"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+
+                        Show The Certificates
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- DATACAMP DAX -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+
+
+                    <div class="certificate-content">
+
+                        <span class="certificate-provider">
+                            DataCamp
+                        </span>
+
+                        <h3>
+                            Introduction to DAX in Power BI
+                        </h3>
+
+                        <p>
+                            Certificate focused on the fundamentals
+                            of DAX and its role in building
+                            calculations and analytical metrics
+                            in Power BI.
+
+                            DataCamp is an international,
+                            skill-focused learning platform
+                            offering practical technology
+                            certifications and courses.
+                        </p>
+
+                    </div>
+
+
+                    <a href="https://drive.google.com/file/d/1XJlUtBvRvVbqcaeCndS7PxRhMYAHSBPz/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+
+                        Show The Certificates
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- DATACAMP CUSTOMER CHURN -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+
+                    <div class="certificate-content">
+
+                        <span class="certificate-provider">
+                            DataCamp
+                        </span>
+
+                        <h3>
+                            Case Study: Analyzing Customer Churn in Power BI
+                        </h3>
+
+                        <p>
+                            Practical case study focused on
+                            analyzing customer churn using
+                            Power BI and turning customer data
+                            into actionable insights.
+
+                            DataCamp provides practical,
+                            project-oriented learning in
+                            data and technology.
+                        </p>
+
+                    </div>
+
+
+                    <a href="https://drive.google.com/file/d/1Au9WjeglQ9vteqXI7nLMePkh81n7Yahs/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+
+                        Show The Certificates
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+                <!-- FOR OUR CHILDREN INITIATIVE -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+
+                    <div class="certificate-content">
+
+                        <span class="certificate-provider">
+                            UNODC Supported Initiative
+                        </span>
+
+                        <h3>
+                            Volunteer Certificate — For Our Children Initiative
+                        </h3>
+
+                        <p>
+                            Recognized for completing 200 volunteer hours (Jan 2024 – Jan 2026) with "For Our Children"
+                            initiative at
+                            Port Said University. The initiative achieved 1st place nationally in the UNODC "Share with
+                            Impact"
+                            competition and 1st place in social projects during Global Entrepreneurship Week at AUC.
+                        </p>
+
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1ksK0R5ksp_oupKvGyFtaQn0JIvBnpSeD/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+
+                        Show The Certificates
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- All Certificates -->
+
+            <div class="certificates-more">
+
+                <p>
+                    Have more certificates to explore?
+                </p>
+
+                <a href="https://drive.google.com/drive/folders/1BpEiEopTdmG6emorC3xAX3u6pc1zTtwjbD0AT9udqhC-x_qKTVCNwd1Uv2Yq7t1YIMTDrHYf?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="btn-primary">
+
+                    <i class="fa-brands fa-google-drive"></i>
+
+                    View All Certificates
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+
+    <section id="contact" class="section contact-section reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Contact
+                </span>
+
+                <h2 class="section-title">
+                    Let's Turn Data Into Insights.
+                </h2>
+
+                <p class="section-description">
+                    Have a project, opportunity, or idea?
+                    Let's talk.
+                </p>
+
+            </div>
+
+
             <form class="contact-form" method="POST" action="https://formsubmit.co/rwanshehab15@gmail.com"
                 enctype="multipart/form-data">
+
+
                 <input type="text" name="name" placeholder="Name" required>
+
+
                 <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
+
+
+                <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+
+
                 <input type="hidden" name="_captcha" value="false">
+
+
+                <button type="submit" class="btn-primary">
+
+                    Send Message
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
             </form>
+
+
+
+            <!-- WhatsApp -->
+
+            <div class="whatsapp-button">
+
+                <a href="https://wa.me/201554217321" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Chat on WhatsApp
+
+                </a>
+
+            </div>
+
         </div>
-        <!-- WhatsApp Button -->
-<div class="whatsapp-button reveal">
-    <a href="https://wa.me/201554217321" target="_blank" class="btn-primary">
-        <i class="fa-brands fa-square-whatsapp"></i> Chat on WhatsApp
-    </a>
-</div>
+
     </section>
 
-    <!-- Footer -->
-    <footer>© 2026 Rewan Shehab</footer>
 
-    <!-- JS -->
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <strong>
+                    Rewan Shehab
+                </strong>
+
+                <span>
+                    Data Analyst & BI Specialist
+                </span>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="https://www.linkedin.com/in/rwan-shehab-790723240/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+
+                <a href="https://github.com/rewanshehab0120" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="https://www.upwork.com/freelancers/~01dd192401f9589a62" target="_blank"
+                    rel="noopener noreferrer" aria-label="Upwork">
+
+                    <i class="fa-brands fa-upwork"></i>
+
+                </a>
+
+            </div>
+
+
+            <p>
+                © 2026 Rewan Shehab. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================== JS ==================== -->
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
