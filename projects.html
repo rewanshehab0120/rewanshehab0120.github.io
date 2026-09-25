@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Projects | Rewan Shehab</title>
+
+    <meta name="description"
+        content="Explore all Data Analysis, Business Intelligence, and Machine Learning projects by Rewan Shehab.">
+
+    <meta name="author" content="Rewan Shehab">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+
+            <!-- Logo links back to index.html -->
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Rewan Shehab</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation -->
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#hero" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#what-i-can-do" class="nav-link">What I Can Do</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+
+                    <li class="nav-dropdown">
+                        <a href="projects.html" class="nav-link active dropdown-toggle">
+                            Projects <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#portfolio">Featured Projects</a></li>
+                            <li><a href="projects.html">All Projects</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-dropdown">
+                        <a href="index.html#experience" class="nav-link dropdown-toggle">
+                            Experience <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#how-i-work">How I Work</a></li>
+                            <li><a href="index.html#experience">Experience</a></li>
+                            <li><a href="index.html#certifications">Certifications</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navbar Actions -->
+            <div class="actions">
+                <a href="Rewan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary nav-cv">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    CV
+                </a>
+
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header section">
+        <div class="container">
+            <span class="section-label">Portfolio Showcase</span>
+            <h1 class="section-title">All Works & Projects</h1>
+            <p class="section-description">
+                A complete showcase of my data analytics dashboards, end-to-end business intelligence reports, and
+                machine learning models.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS GALLERY ==================== -->
+    <section class="section bg-light" style="padding-top: 20px;">
+        <div class="container">
+
+            <!-- Category Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid" id="all-projects-grid">
+
+                <!-- PROJECT 1: GlowSpace -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/GlowSpace/Screenshot 2026-04-22 022851.png" alt="GlowSpace preview" class="project-slide">
+                        <img src="image/GlowSpace/Screenshot 2026-04-22 023309.png" alt="GlowSpace preview" class="project-slide">
+                        <img src="image/GlowSpace/Screenshot 2026-04-22 024507.png" alt="GlowSpace preview" class="project-slide">
+                        <img src="image/GlowSpace/Screenshot 2026-04-22 024748.png" alt="GlowSpace preview" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>GlowSpace</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Data Analysis</span>
+                        <h3>GlowSpace – Personalized Beauty Marketing</h3>
+                        <p>A comprehensive analytical study evaluating business performance, marketing channel
+                            efficiency, and customer acquisition vs retention drivers.</p>
+
+                        <div class="project-actions">
+                            <a href="reports/GlowSpace DarkMode.pdf" target="_blank" rel="noopener noreferrer"
+                                class="project-report-link">
+                                Show The Report
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/GlowSpace-Personalized-Beauty-Marketing"
+                                target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://lnkd.in/p/eAP3Tv-c" target="_blank" rel="noopener noreferrer"
+                                class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: HandyHome Services -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/HandyHome Services/Screenshot 2026-04-19 025534.png" alt="HandyHome preview"
+                            class="project-slide active">
+                        <img src="image/HandyHome Services/Screenshot 2026-04-19 030248.png" alt="HandyHome preview"
+                            class="project-slide">
+                        <img src="image/HandyHome Services/Screenshot 2026-04-19 031718.png" alt="HandyHome preview"
+                            class="project-slide">
+                        <img src="image/HandyHome Services/طScreenshot 2026-04-19 032249.png alt="HandyHome preview"
+                            class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>HandyHome</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Data Analysis</span>
+                        <h3>HandyHome Services</h3>
+                        <p>Multi-dimensional operational analysis tracking booking efficiency, peak service windows, and
+                            marketing channel profitability.</p>
+
+                        <div class="project-actions">
+                            <a href="reports/HandyHome Services - blue.pdf" target="_blank" rel="noopener noreferrer"
+                                class="project-report-link">
+                                Show The Report
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/HandyHome-Services" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://lnkd.in/p/eNDbgGiS" target="_blank" rel="noopener noreferrer"
+                                class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: Panifica Românească -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/Panifica Românească/Screenshot 2026-09-10 002229.png" alt="Panifica preview"
+                            class="project-slide active">
+                        <img src="image/Panifica Românească/Screenshot 2026-09-10 002301.png" alt="Panifica preview"
+                            class="project-slide">
+                        <img src="image/Panifica Românească/Screenshot 2026-09-10 002322.png" alt="Panifica preview"
+                            class="project-slide">
+                        <img src="image/Panifica Românească/Screenshot 2026-09-10 002333.png" alt="Panifica preview"
+                            class="project-slide">
+                        <img src="image/Panifica Românească/Screenshot 2026-09-10 002341.png" alt="Panifica preview"
+                            class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Panifica</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Data Analysis</span>
+                        <h3>Panifica Românească</h3>
+                        <p>Evaluating marketing effectiveness, Return on Ad Spend (ROAS), workforce service speed, and
+                            customer conversion dynamics.</p>
+
+                        <div class="project-actions">
+                            <a href="reports/Panifica Românească DarkMode.pdf" target="_blank" rel="noopener noreferrer"
+                                class="project-report-link">
+                                Show The Report
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Panifica-Rom-neasc-" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://lnkd.in/p/eNDbgGiS" target="_blank" rel="noopener noreferrer"
+                                class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4: High-Volume Sales -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/High-Volume Sales/Presentation1.png" alt="Sales Analytics"
+                            class="project-slide active">
+                        <img src="image/High-Volume Sales/Slide2.PNG" alt="Sales Analytics" class="project-slide">
+                        <img src="image/High-Volume Sales/Slide3.PNG" alt="Sales Analytics" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Excel Big Data</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Data Analysis</span>
+                        <h3>High-Volume Sales Analytics</h3>
+                        <p>Processing and analyzing 8.5M+ sales records using Excel, Power Query, and Data Modeling to
+                            uncover key revenue patterns.</p>
+
+                        <div class="project-actions">
+                            <a href="https://1drv.ms/x/c/60846860529561d6/IQDmeclMFhC2Q6IjA-Kvrlv1AdMljnfy6FpdQVkGRigdN3s?e=RHH8nO"
+                                target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/-Excel-Big-Data-Dashboard" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/-Excel-Big-Data-Dashboard" target="_blank"
+                                rel="noopener noreferrer" class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5: Telco Churn -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/Telco Churn/Screenshot 2026-02-24 124630.png" alt="Telco Churn"
+                            class="project-slide active">
+                        <img src="image/Telco Churn/Screenshot 2026-02-24 124645.png" alt="Telco Churn"
+                            class="project-slide">
+                        <img src="image/Telco Churn/Screenshot 2026-02-24 124658.png" alt="Telco Churn"
+                            class="project-slide">
+                        <img src="image/Telco Churn/Screenshot 2026-02-24 124710.png" alt="Telco Churn"
+                            class="project-slide">
+                        <img src="image/Telco Churn/Screenshot 2026-02-24 124725.png" alt="Telco Churn"
+                            class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Power BI & SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Data Analysis</span>
+                        <h3>Telco Customer Churn & Retention</h3>
+                        <p>Customer churn analytics pipeline leveraging Python, SQL, Power BI, and Tableau to retain
+                            high-value accounts.</p>
+
+                        <div class="project-actions">
+                            <a href="https://app.powerbi.com/groups/me/reports/f7829a0d-d00d-4693-b904-cd7fba5eaaf0/17eff8309d60a7c2008b?experience=power-bi"
+                                target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Telco-Customer-Data-Analysis" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/rwan-shehab_presentation-activity-7441408395754037248-PIvp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE"
+                                target="_blank" rel="noopener noreferrer" class="project-linkedin-btn"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 6: Fitbit -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/Fitbit/Screenshot 2026-02-20 082349.png" alt="Fitbit Behavior"
+                            class="project-slide active">
+                        <img src="image/Fitbit/Screenshot (372).png" alt="Fitbit Behavior" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Fitbit Insights</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Data Analysis</span>
+                        <h3>Fitbit User Behavior & Marketing Insights</h3>
+                        <p>Behavioral segmentation dashboard analyzing user activity trends and health indicators driven
+                            by DAX metrics.</p>
+
+                        <div class="project-actions">
+                            <a href="https://app.powerbi.com/groups/me/reports/3bfacd5b-0ba4-4bf1-b774-99fb41fd618e/dc4b7742841009d992c4?experience=power-bi"
+                                target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/FitBit-Data-Insights-Dashboard" target="_blank"
+                                target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/rwan-shehab_sql-databaseabrdesign-nti-activity-7445462771883884545-lO4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvoTpwBvYobQbEfdiX_5pjuhlZHd9kIxnE"
+                                target="_blank" rel="noopener noreferrer" class="project-linkedin-btn"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 7: UrbanMind AI -->
+                <article class="featured-project-card reveal" data-category="machine-learning">
+                    <div class="project-gallery">
+                        <img src="image/ml-project-1.png" alt="UrbanMind AI" class="project-slide active">
+                        <img src="image/ml-project-2.png" alt="UrbanMind AI" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Smart City ML</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Machine Learning</span>
+                        <h3>UrbanMind AI – Cairo Smart City Digital Twin</h3>
+                        <p>Smart city analytics integrating GIS road networks, CAPMAS population data, weather
+                            indicators, and predictive simulation models.</p>
+
+                        <div class="project-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/UrbanMind-AI-" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-linkedin-btn"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 8: Fuel Price Predictor -->
+                <article class="featured-project-card reveal" data-category="machine-learning">
+                    <div class="project-gallery">
+                        <img src="image/Fuel Price Predictor/Screenshot (2579).png" alt="Fuel Price Predictor"
+                            class="project-slide active">
+                        <img src="image/Fuel Price Predictor/Screenshot (2583).png" alt="Fuel Price Predictor"
+                            class="project-slide">
+                        <img src="image/Fuel Price Predictor/Screenshot (2584).png" alt="Fuel Price Predictor"
+                            class="project-slide">
+                        <img src="image/Fuel Price Predictor/Screenshot_25-9-2026_9342_127.0.0.1.jpeg"
+                            alt="Fuel Price Predictor" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Time Series ML</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Machine Learning</span>
+                        <h3>Egyptian Fuel Price Predictive System</h3>
+                        <p>Time-series forecasting modeling fuel price fluctuations using XGBoost, Brent oil metrics,
+                            and macro-economic factors.</p>
+
+                        <div class="project-actions">
+                            <a href="https://canva.link/18jcz62jjbc2gzq" target="_blank" rel="noopener noreferrer"
+                                class="project-report-link">
+                                Show Presentaion <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/FullTank" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://lnkd.in/p/esSmVMXv" target="_blank" rel="noopener noreferrer"
+                                class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 8: Databel Churn Analysis -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/Databel Churn Analysis/Screenshot 2026-03-17 195413.png"
+                            alt="Databel Churn Analysis" class="project-slide active">
+                        <img src="image/Databel Churn Analysis/Screenshot 2026-03-17 195459.png"
+                            alt="Databel Churn Analysis" class="project-slide">
+                        <img src="image/Databel Churn Analysis/Screenshot (13).png" alt="Databel Churn Analysis"
+                            class="project-slide">
+                        <img src="image/Databel Churn Analysis/Screenshot (13).png" alt="Databel Churn Analysis"
+                            class="project-slide">
+                        <img src="image/Databel Churn Analysis/Screenshot 2026-03-17 195652.png"
+                            alt="Databel Churn Analysis" class="project-slide">
+                        <img src="image/Databel Churn Analysis/Screenshot 2026-04-23 201848.pngg"
+                            alt="Databel Churn Analysis" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Customer Churn Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">Power BI / Data Analytics</span>
+                        <h3>Databel – Analyzing Customer Churn & Retention</h3>
+                        <p>Business intelligence case study analyzing attrition patterns for 6,687 customers. Evaluates
+                            competitor impact,
+                            contract vulnerabilities, support interactions, and dynamic DAX retention metrics.</p>
+
+                        <div class="project-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Case-Study-Analyzing-Customer-Churn-in-power-bi"
+                                target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://lnkd.in/p/enHHT5b4" target="_blank" rel="noopener noreferrer"
+                                class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 9: Sales Data Analysis (SQL) -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/Sales Data Analysis (SQL)/Screenshot (2479).png" alt="Sales Data Analysis (SQL)"
+                            class="project-slide active">
+                        <img src="image/Sales Data Analysis (SQL)/1769822399667.jpg" alt="Sales Data Analysis (SQL)"
+                            class="project-slide">
+                        <img src="image/Sales Data Analysis (SQL)/1769822399897.jpg" alt="Sales Data Analysis (SQL)"
+                            class="project-slide">
+                        <img src="image/Sales Data Analysis (SQL)/1769822399953.jpg" alt="Sales Data Analysis (SQL)"
+                            class="project-slide">
+                        <img src="image/Sales Data Analysis (SQL)/1769822400127.jpg" alt="Sales Data Analysis (SQL)"
+                            class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>SQL Sales Intelligence</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">SQL / Data Analytics</span>
+                        <h3>SQL Sales Data Analysis & Market Intelligence</h3>
+                        <p>Relational database analysis using MS SQL Server to uncover revenue drivers, regional
+                            performance, product profitability, and customer retention strategies using complex CTEs,
+                            joins, and aggregations.</p>
+
+                        <div class="project-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Sales-Data-Analysis-SQL" target="_blank"
+                                rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Sales-Data-Analysis-SQL" target="_blank"
+                                rel="noopener noreferrer" class="project-linkedin-btn" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 10: Educational Management System -->
+                <article class="featured-project-card reveal" data-category="data-analysis">
+                    <div class="project-gallery">
+                        <img src="image/Educational Management System/WhatsApp Image 2025-12-12 at 00.38.47_86b7a173.jpg" alt="Educational Management System" class="project-slide active">
+                        <img src="image/Educational Management System/Screenshot (798).png" alt="Educational Management System" class="project-slide">
+
+                        <div class="project-overlay">
+                            <span>Database Architecture & SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-content">
+                        <span class="project-category">SQL / Database Engineering</span>
+                        <h3>Educational Management System – Database Design & SQL Analytics</h3>
+                        <p>Normalized SQL Server relational database designed to manage academic entities, tracks,
+                            attendance, and resource capacity. Features complex junction tables, subqueries, and
+                            analytical reports for institutional insights.</p>
+
+                        <div class="project-actions">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Educational-Management-System-Database-SQL-Analytics-" target="_blank" rel="noopener noreferrer" class="project-report-link">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://github.com/rewanshehab0120/Educational-Management-System-Database-SQL-Analytics-" target="_blank" rel="noopener noreferrer" class="project-linkedin-btn"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <strong>Rewan Shehab</strong>
+                <span>Data Analyst & BI Specialist</span>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/rwan-shehab-790723240/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/rewanshehab0120" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~01dd192401f9589a62" target="_blank"
+                    rel="noopener noreferrer" aria-label="Upwork">
+                    <i class="fa-brands fa-upwork"></i>
+                </a>
+            </div>
+
+            <p>© 2026 Rewan Shehab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== JS ==================== -->
+    <script src="projects.js"></script>
+</body>
+
+</html>
