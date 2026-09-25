@@ -55,7 +55,8 @@
 }
 
 .dark .highlight-item strong {
-    color: #2cc2d6; /* لون فاتح ومضيء للعناوين مثل Volunteer */
+    color: #2cc2d6;
+    /* لون فاتح ومضيء للعناوين مثل Volunteer */
 }
 
 
@@ -186,7 +187,8 @@ nav {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 16px; /* تقليل المسافة لتخفيف الزحمة */
+    gap: 16px;
+    /* تقليل المسافة لتخفيف الزحمة */
 
     list-style: none;
 }
@@ -410,23 +412,19 @@ nav {
     align-items: center;
 
     padding:
-        120px 0
-        80px;
+        120px 0 80px;
 
     background:
-        radial-gradient(
-            circle at 85% 30%,
+        radial-gradient(circle at 85% 30%,
             var(--primary-soft),
-            transparent 35%
-        );
+            transparent 35%);
 }
 
 .hero-container {
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1.15fr)
-        minmax(280px, 0.85fr);
+        minmax(0, 1.15fr) minmax(280px, 0.85fr);
 
     align-items: center;
 
@@ -573,11 +571,9 @@ nav {
     border-radius: 30px;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             var(--primary-soft),
-            transparent
-        );
+            transparent);
 
     border: 1px solid var(--border);
 }
@@ -623,8 +619,7 @@ nav {
     max-width: 720px;
 
     margin:
-        0 auto
-        60px;
+        0 auto 60px;
 
     text-align: center;
 }
@@ -671,8 +666,7 @@ nav {
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1.5fr)
-        minmax(280px, 0.7fr);
+        minmax(0, 1.5fr) minmax(280px, 0.7fr);
 
     gap: 70px;
 
@@ -1026,8 +1020,7 @@ nav {
     line-height: 1.35;
 
     margin:
-        7px 0
-        10px;
+        7px 0 10px;
 }
 
 .featured-project-content p {
@@ -1240,8 +1233,7 @@ nav {
     line-height: 1.4;
 
     margin:
-        7px 0
-        9px;
+        7px 0 9px;
 }
 
 .project-content p {
@@ -1337,7 +1329,7 @@ nav {
     margin-bottom: 13px;
 }
 
-.workflow-step > i {
+.workflow-step>i {
     color: var(--primary);
 
     font-size: 22px;
@@ -1432,8 +1424,7 @@ nav {
     font-size: 18px;
 
     margin:
-        4px 0
-        7px;
+        4px 0 7px;
 }
 
 .experience-content p {
@@ -1611,11 +1602,9 @@ nav {
 
 .contact-section {
     background:
-        radial-gradient(
-            circle at 15% 30%,
+        radial-gradient(circle at 15% 30%,
             var(--primary-soft),
-            transparent 30%
-        );
+            transparent 30%);
 }
 
 .contact-form {
@@ -2000,7 +1989,8 @@ footer p {
     }
 
     .nav-cv {
-        display: none;
+        display: inline-flex;
+        /* أو إزالة القاعدة بالكامل */
     }
 
 
