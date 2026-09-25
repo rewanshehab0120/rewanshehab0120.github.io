@@ -59,13 +59,12 @@ window.addEventListener("scroll", () => {
    ========================================================= */
 document.querySelectorAll('.featured-project-card').forEach(card => {
     const slides = card.querySelectorAll('.project-slide');
-    if (slides.length <= 1) return; // إذا كانت هناك صورة واحدة يتجاهل الكود
+    if (slides.length <= 1) return;
 
     let currentIndex = 0;
     let intervalId = null;
 
     card.addEventListener('mouseenter', () => {
-        // التبديل التلقائي كل ثانية ونصف عند الوقوف بالماوس
         intervalId = setInterval(() => {
             slides[currentIndex].classList.remove('active');
             currentIndex = (currentIndex + 1) % slides.length;
@@ -74,7 +73,6 @@ document.querySelectorAll('.featured-project-card').forEach(card => {
     });
 
     card.addEventListener('mouseleave', () => {
-        // إيقاف التبديل والعودة للصورة الأولى فور خروج الماوس
         clearInterval(intervalId);
         slides.forEach(slide => slide.classList.remove('active'));
         currentIndex = 0;
@@ -82,28 +80,29 @@ document.querySelectorAll('.featured-project-card').forEach(card => {
     });
 });
 
-// كود الفلترة لعرض أحدث 3 مشاريع فقط
+// كود الفلترة المعدل ليشمل كافة الكروت داخل قسم all-projects
 const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+const projectCards = document.querySelectorAll('#all-projects .project-card, #all-projects .featured-project-card');
 
 function filterProjects(filterValue) {
     let visibleCount = 0;
 
-    // تحويل القائمة لمصفوفة وعكسها لنبدأ من أحدث العناصر المضافة (من الأسفل للأعلى)
+    // تحويل القائمة لمصفوفة وعكسها لنبدأ من أحدث العناصر المضافة
     const cardsArray = Array.from(projectCards).reverse();
 
     cardsArray.forEach(card => {
         const category = card.getAttribute('data-category');
         const matches = (filterValue === 'all' || category === filterValue);
 
-        // إظهار الكارت فقط إذا كان يطابق الفلتر ولم نتجاوز عدد 3 مشاريع
         if (matches && visibleCount < 3) {
             card.classList.remove('filter-hidden');
             card.classList.add('filter-visible');
+            card.style.display = ''; // إظهار الكارت
             visibleCount++;
         } else {
             card.classList.add('filter-hidden');
             card.classList.remove('filter-visible');
+            card.style.display = 'none'; // إخفاء الكارت
         }
     });
 }
@@ -131,7 +130,6 @@ if (hamburger && mainNav) {
         mainNav.classList.toggle("mobile-open");
     });
 
-    // إغلاق القائمة تلقائياً عند الضغط على أي رابط داخلها
     document.querySelectorAll("#main-nav a").forEach(link => {
         link.addEventListener("click", () => {
             hamburger.classList.remove("active");
