@@ -1980,6 +1980,19 @@ footer p {
         background: var(--primary-soft);
     }
 
+    /* إصلاح القوائم المنسدلة في الموبايل لكي لا تظهر فوق الكلام */
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none !important;
+        border: none !important;
+        background: transparent !important;
+        padding-left: 15px !important;
+        margin: 5px 0 !important;
+    }
+
     /* Navbar actions */
 
     .actions {
