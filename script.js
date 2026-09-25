@@ -120,3 +120,22 @@ filterBtns.forEach(btn => {
 
 // تشغيل الفلتر الافتراضي عند تحميل الصفحة
 filterProjects('all');
+
+// Toggle Mobile Navigation
+const hamburger = document.getElementById("hamburger");
+const mainNav = document.getElementById("main-nav");
+
+if (hamburger && mainNav) {
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
+    });
+
+    // إغلاق القائمة تلقائياً عند الضغط على أي رابط داخلها
+    document.querySelectorAll("#main-nav a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            mainNav.classList.remove("mobile-open");
+        });
+    });
+}
